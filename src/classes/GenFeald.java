@@ -14,15 +14,19 @@ public class GenFeald {
         System.out.println("Введите количество точек:");
         int numIteration = scaner.nextInt();
         for(int i = 0 ; i < numIteration; i++ ){
-            System.out.println("Введите координаты точки" + numIteration);
-            points.add(new CoordDot(scaner.nextInt(), scaner.nextInt()));
+            System.out.println("Введите координаты точки " + i);
+            points.add(new CoordDot(scaner.nextDouble(), scaner.nextDouble()));
         }
     }
 
-    public int getBorderDotX(int index){
+    public double getBorderDotX(int index){
         return points.get(index).getX();
     }
-    public int getBorderDotY(int index){
+    public double getBorderDotY(int index){
         return points.get(index).getY();
+    }
+
+    public int getLen(){
+        return points.size();
     }
 }

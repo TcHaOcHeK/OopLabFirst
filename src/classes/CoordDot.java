@@ -2,20 +2,20 @@ package classes;
 
 public class CoordDot {
 
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
-    public CoordDot(int x, int y) {
+    public CoordDot(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
     // Геттеры
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
